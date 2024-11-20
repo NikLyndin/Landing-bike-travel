@@ -10,6 +10,7 @@
 	--color-black: #151515;
 	--color-dark: #222;
 	--button-scroll: #ebebeb;
+	--name-model-pse: #d7d4d4;
 }
 
 blockquote,
@@ -250,6 +251,74 @@ a {
 	display: block;
 }
 
+.bikes-card {
+	margin-right: 120px;
+}
+
+.bikes-card__header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: end;
+}
+
 .bikes-card__title {
 	margin-top: 120px;
+}
+
+.bikes-type__nav {
+	display: flex;
+	gap: 40px;
+	line-height: 28px;
+	color: var(--color-dark);
+	opacity: 0.7;
+}
+
+.bikes-type {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 120px;
+	gap: 30px;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-container__box {
+	border-radius: 20px;
+	background-color: #f4f4f4;
+	box-shadow: 0 20px 140px 0 rgba(0, 0, 0, 0.06);
+}
+
+.card-container__image {
+	display: block;
+	padding: 20px;
+	font-weight: 600;
+	line-height: 22px;
+	color: var(--color-black);
+}
+
+.card-container__name {
+	margin-top: 22px;
+	align-self: start;
+	padding-left: 6px;
+}
+
+.group-grevel, .group-tt {
+	display: none;
+}
+
+#bikes-highway:not(:checked) + .group-highway {
+	display: none;
+}
+
+#bikes-grevel:checked + .group-grevel {
+	display: block;
+}
+
+#bikes-tt:checked + .group-tt {
+	display: block;
 }

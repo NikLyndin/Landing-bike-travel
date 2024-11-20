@@ -51,13 +51,13 @@
 				<section class="about-bike__right-column">
 					<img class="about-bike__image" src="./image/about-bike.png" alt="Горная дорога, уходящая в сосновый лес. Вдалеке виднеются снежные горные вершины">
 					<div class="about-bike__card-sticky">
-						<img class="card-sticky__image" src="./image/about-bike-sticky.png"> 
+						<img class="card-sticky__image" src="./image/about-bike-sticky.png" alt=""> 
 					</div>
 				</section>
 			</section>
 			<section class="main-section quote">
 				<section class="quote__left-column">
-					<img class="quote-image" src="./image/quote-img.png">
+					<img class="quote-image" src="./image/quote-img.png" alt="">
 				</section>
 				<section class="quote__right-column">
 					<blockquote class="quote_blockquote">
@@ -73,7 +73,7 @@
 			</section>
 			<section class="main-section roads-list">
 				<form>
-					<input type="radio" id="card-highway" name="test" checked="checked" class="visually-hidden input-highway">
+					<input type="radio" id="card-highway" name="road-list-input" checked="checked" class="visually-hidden">
 					<div class="slide-highway">
 						<div class="list-item__container">
 							<div class="list-item__left-column">
@@ -90,7 +90,7 @@
 							</div>
 						</div>
 					</div>	
-					<input type="radio" id="card-grevel" name="test" class="visually-hidden input-grevel">
+					<input type="radio" id="card-grevel" name="road-list-input" class="visually-hidden">
 					<div class="slide-grevel">
 						<div class="list-item__container">
 							<div class="list-item__left-column">
@@ -107,7 +107,7 @@
 							</div>
 						</div>
 					</div>
-					<input type="radio" id="card-tt" name="test" class="visually-hidden input-tt">
+					<input type="radio" id="card-tt" name="road-list-input" class="visually-hidden">
 					<div class="slide-tt">
 						<div class="list-item__container">
 							<div class="list-item__left-column">
@@ -132,19 +132,101 @@
 				<label for="card-tt"></label>
 			</div>
 			<section class="main-section bikes-card">
-				<div class="bikes-card__nav">
+				<div class="bikes-card__header">
 					<h2 class="bikes-card__title all-title">
 						Велосипеды
 					</h2>
-					<div class="bikes-type__group">
-						<label for=""></label>
-						<label for=""></label>
-						<label for=""></label>
+					<div class="bikes-type__nav">
+						<label for="bikes-highway">Шоссе</label>
+						<label for="bikes-grevel">Грэвел</label>
+						<label for="bikes-tt">TT</label>
 					</div>
 				</div>
-				<div class="bikes-type">
-					
-				</div>
+				<div class="bikes-type__group">
+					<form>
+						<input type="radio" id="bikes-highway" name="bikes-card-input" class="visually-hidden" checked="checked">
+						<div class="bikes-type group-highway">
+							<div class="group-highway card-container">
+								<div class="card-container__box">
+									<img class="card-container__image" src="./image/1hw-Cervelo_Caledonia-5.png" alt="изображение велосипеда">
+								</div>
+								<p class="card-container__name">
+									Cervelo Caledonia-5
+								</p>
+							</div>
+							<div class="group-highway card-container">
+								<div class="card-container__box">
+									<img class="card-container__image" src="./image/2hw-Cannondale_Systemsix_Himod.png" alt="изображение велосипеда">
+								</div>
+								<p class="card-container__name">
+									Cannondale Systemsix Himod
+								</p>
+							</div>
+							<div class="group-highway card-container">
+								<div class="card-container__box">
+									<img class="card-container__image" src="./image/3hw-Trek_Domane_SL-7.png" alt="изображение велосипеда">
+								</div>
+								<p class="card-container__name">
+									Trek Domane SL-7
+								</p>
+							</div>
+						</div>
+						<input type="radio" id="bikes-grevel" name="bikes-card-input" class="visually-hidden">
+						<div class="bikes-type group-grevel">
+							<div class="group-grevel card-container">
+								<div class="card-container__box">
+									<img class="card-container__image" src="./image/1gr-Cervelo_Aspero_GRX_810.png" alt="изображение велосипеда">
+								</div>
+								<p class="card-container__name">
+									Cervelo Aspero GRX 810
+								</p>
+							</div>
+							<div class="group-grevel card-container">
+								<div class="card-container__box">
+									<img class="card-container__image" src="./image/2gr-Specialized_S-Works_Diverge.png" alt="изображение велосипеда">
+								</div>
+								<p class="card-container__name">
+									Specialized S-Works Diverge
+								</p>
+							</div>
+							<div class="group-grevel card-container">
+								<div class="card-container__box">
+									<img class="card-container__image" src="./image/3gr-Cannondale_Topstone_Lefty_3.png" alt="изображение велосипеда">
+								</div>
+								<p class="card-container__name">
+									Cannondale Topstone Lefty 3
+								</p>
+							</div>
+						</div>
+						<input type="radio" id="bikes-tt" name="bikes-card-input" class="visually-hidden">
+						<div class="bikes-type group-tt">
+							<div class="group-tt card-container">
+								<div class="card-container__box">
+									<img class="card-container__image" src="./image/1tt-Specialized_S-Works_Shiv.png" alt="изображение велосипеда">
+								</div>
+								<p class="card-container__name">
+									Specialized S-Works Shiv
+								</p>
+							</div>
+							<div class="group-tt card-container">
+								<div class="card-container__box">
+									<img class="card-container__image" src="./image/2tt-BMC_Timemachine_01_ONE.png" alt="изображение велосипеда">
+								</div>
+								<p class="card-container__name">
+									BMC Timemachine 01 ONE
+								</p>
+							</div>
+							<div class="group-tt card-container">
+								<div class="card-container__box">
+									<img class="card-container__image" src="./image/3tt-Cervelo_P-Series.png" alt="изображение велосипеда">
+								</div>
+								<p class="card-container__name">
+									Cervelo P-Series
+								</p>
+							</div>
+						</div>
+					</form>
+			  </div>
 			</section>
 			<section class="main-section traning">
 
