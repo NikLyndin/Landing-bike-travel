@@ -72,64 +72,79 @@
 				</section>
 			</section>
 			<section class="main-section roads-list">
-				<div class="slide-highway">
-					<div class="list-item__container">
-						<div class="list-item__left-column">
-							<h2 class="list-item__title all-title">
-								Шоссе
-							</h2>
-							<p class="list-item__article all-article">
-								На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.
-							</p>
-							<img class="list-item__image" src="./image/road-list-1.png" alt="">
+				<form>
+					<input type="radio" id="card-highway" name="test" checked="checked" class="visually-hidden input-highway">
+					<div class="slide-highway">
+						<div class="list-item__container">
+							<div class="list-item__left-column">
+								<h2 class="list-item__title all-title">
+									Шоссе
+								</h2>
+								<p class="list-item__article all-article">
+									На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.
+								</p>
+								<img class="list-item__image" src="./image/road-list-1.png" alt="">
+							</div>
+							<div class="list-item__left-column">
+								<img class="list-item__image" src="./image/road-list-2.png" alt="">
+							</div>
 						</div>
-						<div class="list-item__left-column">
-							<img class="list-item__image" src="./image/road-list-2.png" alt="">
-						</div>
-					</div>
-				</div>	
-				<div class="slide-grevel">
-					<div class="list-item__container">
-						<div class="list-item__left-column">
-							<h2 class="list-item__title all-title">
-								Грэвел
-							</h2>
-							<p class="list-item__article all-article">
-								Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.								</p>
-							<img class="list-item__image" src="./image/road-list-2.png" alt="">
-						</div>
-						<div class="list-item__left-column">
-							<img class="list-item__image" src="./image/road-list-3.png" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="slide-tt">
-					<div class="list-item__container">
-						<div class="list-item__left-column">
-							<h2 class="list-item__title all-title">
-								ТТ
-							</h2>
-							<p class="list-item__article all-article">
-								ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.
-							</p>		
-							<img class="list-item__image" src="./image/road-list-3.png" alt="">
-						</div>
-						<div class="list-item__left-column">
-							<img class="list-item__image" src="./image/road-list-4.png" alt="">
+					</div>	
+					<input type="radio" id="card-grevel" name="test" class="visually-hidden input-grevel">
+					<div class="slide-grevel">
+						<div class="list-item__container">
+							<div class="list-item__left-column">
+								<h2 class="list-item__title all-title">
+									Грэвел
+								</h2>
+								<p class="list-item__article all-article">
+									Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.
+								</p>
+								<img class="list-item__image" src="./image/road-list-2.png" alt="">
+							</div>
+							<div class="list-item__left-column">
+								<img class="list-item__image" src="./image/road-list-3.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
+					<input type="radio" id="card-tt" name="test" class="visually-hidden input-tt">
+					<div class="slide-tt">
+						<div class="list-item__container">
+							<div class="list-item__left-column">
+								<h2 class="list-item__title all-title">
+									ТТ
+								</h2>
+								<p class="list-item__article all-article">
+									ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.
+								</p>		
+								<img class="list-item__image" src="./image/road-list-3.png" alt="">
+							</div>
+							<div class="list-item__left-column">
+								<img class="list-item__image" src="./image/road-list-4.png" alt="">
+							</div>
+						</div>
+					</div>
+				</form>
 			</section>
-			<form>
-				<input type="radio" id="hhhh" name="test" checked="checked">
-				<input type="radio" id="gggg" name="test" checked="checked">
-				<input type="radio" id="tttt" name="test" checked="checked">
-				<label for="hhhh"></label>
-				<label for="gggg"></label>
-				<label for="tttt"></label>
-			</form>
-			<section class="main-section bikes">
-
+			<div class="main-section button-scroll">
+				<label for="card-highway"></label>
+				<label for="card-grevel"></label>
+				<label for="card-tt"></label>
+			</div>
+			<section class="main-section bikes-card">
+				<div class="bikes-card__nav">
+					<h2 class="bikes-card__title all-title">
+						Велосипеды
+					</h2>
+					<div class="bikes-type__group">
+						<label for=""></label>
+						<label for=""></label>
+						<label for=""></label>
+					</div>
+				</div>
+				<div class="bikes-type">
+					
+				</div>
 			</section>
 			<section class="main-section traning">
 

@@ -9,7 +9,6 @@
 	--bg-color-footer: #efefef;
 	--color-black: #151515;
 	--color-dark: #222;
-	--name-model-pse: #d7d4d4;
 	--button-scroll: #ebebeb;
 }
 
@@ -36,6 +35,16 @@ html {
 
 a {
 	text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
  
 .page {
@@ -189,8 +198,58 @@ a {
 }
 
 .list-item__article {
-	margin-top: 46px;
-	margin-bottom: 80px;
+	margin-top: 43px;
+	margin-bottom: 82px;
 	max-width: 460px;
 	white-space: wrap;
+}
+
+.slide-grevel, .slide-tt {
+	display: none;
+}
+
+.button-scroll label {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: var(--button-scroll);
+	border-radius: 100%;
+	cursor: pointer;
+	margin-right: 15px;
+	margin-top: 45px;
+	position: relative;
+}
+
+.button-scroll label::after {
+	content: '';
+	display: block;
+	position: absolute;
+	background-image: url(../image/button.svg);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	top: 15px;
+	left: 21px;
+}
+
+.button-scroll label:hover {
+	transform: rotate(-90deg);
+	transition: 0.8s;
+	opacity: 0.75;
+}
+
+#card-highway:not(:checked) + .slide-highway {
+	display: none;
+}
+
+#card-grevel:checked + .slide-grevel {
+	display: block;
+}
+
+#card-tt:checked + .slide-tt {
+	display: block;
+}
+
+.bikes-card__title {
+	margin-top: 120px;
 }
