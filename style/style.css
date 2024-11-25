@@ -11,6 +11,8 @@
 	--color-dark: #222;
 	--button-scroll: #ebebeb;
 	--name-model-pse: #d7d4d4;
+	--footer-border-color: #c7c7c7;
+	--copyrite-color: #cfcfcf;
 }
 
 blockquote,
@@ -51,11 +53,14 @@ a {
 .page {
 		font-size: 18px;
 		font-weight: 400;
-    inline-size: 1440px;
-    block-size: 100%;
+    width: 1440px;
 		margin: 0 auto;
-		position: relative;
 		background-color: var(--bg-color);
+}
+
+
+.maim-page {
+	padding-left: 120px;
 }
 
 .all-title {
@@ -88,8 +93,8 @@ a {
 	color: var(--color-black);
 }
 
-.main-section {
-	padding-left: 120px;
+.menu-list__link:hover {
+	opacity: 0.75;
 }
 
 .about-bike {
@@ -118,6 +123,14 @@ a {
 	border: 0;
 	border-radius: 4px;
 	padding: 16px 46px;
+	background-image: linear-gradient(to left, transparent, transparent 50%, #319E75 50%, #319E75);
+  	background-position: 100% 0;
+  	background-size: 200% 100%;
+  	transition: all 1s ease-in;
+}
+
+.about-bike__button:hover {
+	background-position: 0 0;
 }
 
 .about-bike__name-model {
@@ -293,6 +306,11 @@ a {
 	box-shadow: 0 20px 140px 0 rgba(0, 0, 0, 0.06);
 }
 
+.card-container__box:hover {
+	cursor: pointer;
+	box-shadow: 0 20px 140px 0 rgba(0, 0, 0, 0.11);
+}
+
 .card-container__image {
 	display: block;
 	padding: 20px;
@@ -311,14 +329,95 @@ a {
 	display: none;
 }
 
+.bikes-type__nav label:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	font-weight: 400;
+}
+
 #bikes-highway:not(:checked) + .group-highway {
 	display: none;
 }
 
 #bikes-grevel:checked + .group-grevel {
-	display: block;
+	display: flex;
 }
 
 #bikes-tt:checked + .group-tt {
+	display: flex;
+}
+
+.traning {
+	margin-top: 210px;
+	padding-bottom: 120px;
+	padding-right: 120px;
+	display: flex;
+	gap: 160px
+}
+
+.traning__text {
+	margin-top: 50px;
+}	
+
+.traning__links {
+	margin-top: 180px;
+}
+
+.traning__links a {
+	margin-right: 30px;
+	font-weight: 600;
+	color: var(--color-black);
+}
+
+.traning__links a:hover {
+	opacity: 0.75;
+}
+
+.footer {
+	font-weight: 600;
+	background-color: var(--bg-color-footer);
+	padding-bottom: 60px;
+}
+
+.footer__form-label {
 	display: block;
+	font-size: 24px;
+	color: var(--color-black);
+	line-height: 32px;
+	padding-top: 80px;
+}
+
+.footer__form-input {
+	border: 1px solid var(--footer-border-color);
+	background-color: transparent;
+	color: var(--color-black);
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 28px;
+	padding: 11px 270px 11px 20px;
+	margin-top: 50px;
+	border-radius: 4px;
+	position: relative;
+}
+
+.footer__form-input:focus {
+	outline: none;
+}
+
+.footer__form-input:hover {
+	cursor: pointer;
+}
+
+.footer__form-input:hover::placeholder {
+	color: var(--color-black);
+}
+
+.footer__form-input:focus::placeholder {
+	color: transparent;
+}
+
+.footer__copyright {
+	margin-top: 100px;
+	font-size: 14px;
+	color: var(--copyrite-color);
 }

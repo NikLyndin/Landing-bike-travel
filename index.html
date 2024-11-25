@@ -33,7 +33,7 @@
 			</nav>
 		</header>
 		<main>
-			<section class="main-section about-bike">
+			<section class="maim-page about-bike">
 				<section class="about-bike__left-column">
 					<h1 class="about-bike__title all-title">
 						Шоссе, ТТ <br>и Грэвел
@@ -55,11 +55,11 @@
 					</div>
 				</section>
 			</section>
-			<section class="main-section quote">
-				<section class="quote__left-column">
+			<section class="maim-page quote">
+				<div class="quote__left-column">
 					<img class="quote-image" src="./image/quote-img.png" alt="">
-				</section>
-				<section class="quote__right-column">
+				</div>
+				<div class="quote__right-column">
 					<blockquote class="quote_blockquote">
 						«Катайся много или мало, долго или коротко, как хочешь - но катайся»
 					</blockquote>
@@ -69,9 +69,9 @@
 					<p class="quote-profession">
 						Велогонщик
 					</p>
-				</section>
+				</div>
 			</section>
-			<section class="main-section roads-list">
+			<section class="maim-page roads-list">
 				<form>
 					<input type="radio" id="card-highway" name="road-list-input" checked="checked" class="visually-hidden">
 					<div class="slide-highway">
@@ -126,12 +126,12 @@
 					</div>
 				</form>
 			</section>
-			<div class="main-section button-scroll">
+			<div class="maim-page button-scroll">
 				<label for="card-highway"></label>
 				<label for="card-grevel"></label>
 				<label for="card-tt"></label>
 			</div>
-			<section class="main-section bikes-card">
+			<section class="maim-page bikes-card">
 				<div class="bikes-card__header">
 					<h2 class="bikes-card__title all-title">
 						Велосипеды
@@ -173,7 +173,7 @@
 						</div>
 						<input type="radio" id="bikes-grevel" name="bikes-card-input" class="visually-hidden">
 						<div class="bikes-type group-grevel">
-							<div class="group-grevel card-container">
+							<div class="card-container">
 								<div class="card-container__box">
 									<img class="card-container__image" src="./image/1gr-Cervelo_Aspero_GRX_810.png" alt="изображение велосипеда">
 								</div>
@@ -181,7 +181,7 @@
 									Cervelo Aspero GRX 810
 								</p>
 							</div>
-							<div class="group-grevel card-container">
+							<div class="card-container">
 								<div class="card-container__box">
 									<img class="card-container__image" src="./image/2gr-Specialized_S-Works_Diverge.png" alt="изображение велосипеда">
 								</div>
@@ -189,7 +189,7 @@
 									Specialized S-Works Diverge
 								</p>
 							</div>
-							<div class="group-grevel card-container">
+							<div class="card-container">
 								<div class="card-container__box">
 									<img class="card-container__image" src="./image/3gr-Cannondale_Topstone_Lefty_3.png" alt="изображение велосипеда">
 								</div>
@@ -200,7 +200,7 @@
 						</div>
 						<input type="radio" id="bikes-tt" name="bikes-card-input" class="visually-hidden">
 						<div class="bikes-type group-tt">
-							<div class="group-tt card-container">
+							<div class="card-container">
 								<div class="card-container__box">
 									<img class="card-container__image" src="./image/1tt-Specialized_S-Works_Shiv.png" alt="изображение велосипеда">
 								</div>
@@ -208,7 +208,7 @@
 									Specialized S-Works Shiv
 								</p>
 							</div>
-							<div class="group-tt card-container">
+							<div class="card-container">
 								<div class="card-container__box">
 									<img class="card-container__image" src="./image/2tt-BMC_Timemachine_01_ONE.png" alt="изображение велосипеда">
 								</div>
@@ -216,7 +216,7 @@
 									BMC Timemachine 01 ONE
 								</p>
 							</div>
-							<div class="group-tt card-container">
+							<div class="card-container">
 								<div class="card-container__box">
 									<img class="card-container__image" src="./image/3tt-Cervelo_P-Series.png" alt="изображение велосипеда">
 								</div>
@@ -228,14 +228,39 @@
 					</form>
 			  </div>
 			</section>
-			<section class="main-section traning">
-
+			<section class="maim-page traning">
+				<div class="traning__left-column">
+					<h2 class="traning__title all-title">
+						Тренировки
+					</h2>
+					<p class="traning__text all-article">
+						Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.
+					</p>
+					<div class="traning__links">
+						<a class="traning__links-strava" href="https://www.strava.com">Strava</a>
+						<a class="traning__links-komoot" href="https://www.komoot.com">Komoot</a>
+					</div>
+				</div>
+				<div class="traning__right-column">
+					<img class="traning__image" src="./image/training.png">
+				</div>
 			</section>
 		</main>
-		<footer>
-			<form>
-
-			</form>
+		<footer class="maim-page footer">
+			<div class="footer__left-column">
+				<form class="footer__form">
+					<label class="footer__form-label" for="email">Подпишитесь на<br> рассылку —</label>
+					<input class="footer__form-input" type="email" id="email" placeholder="Ваш e-mail" pattern="^\S+@\S+\.\S+$">
+				</form>
+				<p class="footer__copyright">
+					&#169; Road Club 2021
+				</p>
+			</div>
+			<div class="footer__right-column">
+				<div class="switch">
+					
+				</div>
+			</div>
 		</footer>
   </body>
 </html>
