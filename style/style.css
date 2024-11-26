@@ -419,9 +419,11 @@ a {
 
 .footer {
 	display: flex;
+	justify-content: space-between;
 	font-weight: 600;
 	background-color: var(--bg-color-footer);
 	padding-bottom: 60px;
+	padding-right: 120px;
 }
 
 .footer__form-label {
@@ -465,4 +467,45 @@ a {
 	margin-top: 100px;
 	font-size: 14px;
 	color: var(--copyrite-color);
+}
+
+.footer__right-column {
+	padding-bottom: 12px;
+	align-items: end;
+	display: flex;
+	gap: 22px;
+}
+
+.switch-image-light {
+	height: 28px;
+}
+
+.switch-image-dark {
+	height: 23px;
+}
+
+.switch-btn {
+	display: inline-block;
+	background-color: #fff;
+	width: 44px;
+	height: 24px;
+	border-radius: 15px;
+	cursor: pointer;
+	position: relative;
+}
+
+.switch-btn::after{
+	content: '';
+	position: absolute;
+	background-color: #24B47E;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	top: 2px;
+	left: 2px; 
+	transition-duration: 300ms; 
+}
+
+.switch-on::after {
+  left: 22px;
 }
