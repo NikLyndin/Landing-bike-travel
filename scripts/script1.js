@@ -21,3 +21,11 @@ toggleBtn.addEventListener("click", function() {
     localStorage.setItem('theme', 1);
   }
 });
+
+function changeClass() {
+    document.getElementById("toggle-theme").className += " switch-on";
+}
+
+window.onload = function(){
+    document.getElementById("toggle-theme").addEventListener( 'click', changeClass);
+}
